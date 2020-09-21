@@ -63,7 +63,7 @@ organize data within a cluster of Cassandra nodes using:
   datacenters and how many copies. Keyspaces contain tables.
 - **Table**: defines the typed schema for a collection of partitions. Cassandra
   tables have flexible addition of new columns to tables with zero downtime.
-  Tables contain partitions, which contain partitions, which contain columns.
+  Tables contain partitions, which contain rows, which contain columns.
 - **Partition**: defines the mandatory part of the primary key all rows in
   Cassandra must have. All performant queries supply the partition key in
   the query.
@@ -99,7 +99,7 @@ require a restart of the database to take effect.
 Cassandra provides tools for managing a cluster. The ``nodetool`` command
 interacts with Cassandra's live control interface, allowing runtime manipulation
 of many settings from ``cassandra.yaml``. The ``auditlogviewer`` is used
-to view the audit logs. The  ``fqltool`` is used to view, replay and compare
+to view the audit logs. The ``fqltool`` is used to view, replay and compare
 full query logs.  The ``auditlogviewer`` and ``fqltool`` are new tools in
 Apache Cassandra 4.0.
 
