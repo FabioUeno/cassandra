@@ -60,7 +60,7 @@ conflict-free replicated data type for each CQL row (a.k.a `LWW-Element-Set CRDT
 <https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type#LWW-Element-Set_(Last-Write-Wins-Element-Set)>`_)
 to resolve conflicting mutations on replica sets.
 
- .. _consistent-hashing-token-ring:
+.. _consistent-hashing-token-ring:
 
 Consistent Hashing using a Token Ring
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
