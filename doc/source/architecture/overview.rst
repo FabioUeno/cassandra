@@ -75,17 +75,17 @@ CQL supports numerous advanced features over a partitioned dataset such as:
 
 - Single partition lightweight transactions with atomic compare and set
   semantics.
-- User-defined types, functions and aggregates
+- User-defined types, functions and aggregates.
 - Collection types including sets, maps, and lists.
-- Local secondary indices
-- (Experimental) materialized views
+- Local secondary indices.
+- (Experimental) materialized views.
 
 Cassandra explicitly chooses not to implement operations that require cross
 partition coordination as they are typically slow and hard to provide highly
 available global semantics. For example Cassandra does not support:
 
-- Cross partition transactions
-- Distributed joins
+- Cross partition transactions.
+- Distributed joins.
 - Foreign keys or referential integrity.
 
 Operating
